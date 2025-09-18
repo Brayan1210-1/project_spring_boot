@@ -1,6 +1,6 @@
-package com.cesde.project.repository;
+package com.cesde.project_spring_boot.repository;
 
-import com.cesde.project.model.User;
+import com.cesde.project_spring_boot.model.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

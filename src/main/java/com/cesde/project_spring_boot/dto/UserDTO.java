@@ -1,6 +1,6 @@
-package com.cesde.project.dto;
+package com.cesde.project_spring_boot.dto;
 
-import com.cesde.project.model.User;
+import com.cesde.project_spring_boot.model.User;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 

@@ -1,4 +1,4 @@
-package com.cesde.project.model;
+package com.cesde.project_spring_boot.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -40,6 +40,10 @@ public class User {
   @Column(name = "phone", length = 15)
   private String phone;
 
+  @ManyToOne(fetch =  FetchType.LAZY)
+  @JoinColumn(name = "company_id")
+  private Company company;
+
   // Fecha de creación del usuario (no puede ser nulo, no se puede actualizar)
   @Column(name = "created_at", nullable = false, updatable = false)
   private LocalDateTime createdAt;
@@ -52,11 +56,12 @@ public class User {
   public User() { }
 
   // Constructor con parámetros
-  public User(String firstName, String lastName, String email, String phone) {
+  public User(String firstName, String lastName, String email, String phone, Company company) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
     this.phone = phone;
+    this.company = company;
     this.createdAt = LocalDateTime.now();
     this.updatedAt = LocalDateTime.now();
   }
@@ -116,6 +121,14 @@ public class User {
     this.phone = phone;
   }
 
+  public Company getCompany() {
+      return company;
+  }
+
+  public void setCompany(Company company) {
+      this.company = company;
+  }
+
   public LocalDateTime getCreatedAt() {
     return createdAt;
   }
@@ -137,4 +150,3 @@ public class User {
     return this.firstName + " " + this.lastName;
   }
 }
-

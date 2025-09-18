@@ -1,4 +1,4 @@
-package com.cesde.project;
+package com.cesde.project_spring_boot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
