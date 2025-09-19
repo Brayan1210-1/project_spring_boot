@@ -7,7 +7,7 @@ import jakarta.validation.constraints.NotBlank;
 /**
  * UserDTO - Objeto para transferir datos de usuario.
  * Se usa para recibir datos en las peticiones HTTP y enviar datos en las respuestas HTTP.
- */
+ */ 
 public class UserDTO {
   private Long id;
 
