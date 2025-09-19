@@ -24,7 +24,7 @@ public class ProjectApplication {
       "====================================\n" +
       "✅ CESDE - User API started!\n" +
       "🌐 URL: http://localhost:8080/api/users\n" +
-      "📖 Swagger: http://localhost:8080/swagger-ui.html\n" +
+      "📖 Swagger: http://localhost:8080/swagger-ui/index.html\n" +
       "📚 Educational project - Spring Boot 3.x\n" +
       "===================================="
     );
