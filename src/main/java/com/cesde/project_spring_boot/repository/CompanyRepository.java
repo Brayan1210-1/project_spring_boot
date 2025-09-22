@@ -29,9 +29,10 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
 	}
 	
 	//Mirar los empleados que pertenecen a una empresa por el id
-	@Query
-	("SELECT u FROM users INNER JOIN companies ON u.id = companies.id")
-	List<User> EmployeesOfACompany(@Param ("Companies.id") Long id , @Param ("Users.company_id") Company company);
+	@Query("SELECT u FROM User u WHERE u.company.id = :companyId")
+	List<User> EmployeesOfACompany(@Param ("CompanyId") Long companyId);
+
+	boolean existsByEmail(String email);
 
 	//Saber si empresa existe por NIT
 	
