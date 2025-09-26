@@ -34,6 +34,8 @@ public interface UserRepository extends JpaRepository<User, Long> {
    * Genera: SELECT * FROM users WHERE email = ?
    */
   Optional<User> findByEmail(String email);
+  
+
 
   /**
    * Verificar si existe un usuario con ese email

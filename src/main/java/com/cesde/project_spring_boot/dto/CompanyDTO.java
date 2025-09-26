@@ -95,7 +95,6 @@ public class CompanyDTO {
 				return employees;
 			}
 
-			public void setEmployees(List<User> employees) {
-				this.employees = employees;
-			}
+			
+		
 }	  

@@ -52,7 +52,10 @@ public class SwaggerConfig {
           .description("Different ways to search for users"),
         new Tag()
           .name("📊 Statistics")
-          .description("System counters and statistics")
+          .description("System counters and statistics"),
+        new Tag()
+        .name("Companys Management")
+        .description("CRUD operations for companys: create, read, update, delete")
       )
     );
   }
