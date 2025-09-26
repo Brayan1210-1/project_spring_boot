@@ -133,7 +133,7 @@ public class CompanyController {
 	    }
 	 
 	 //crear un empleado
-	 @PutMapping("/{id}/employees")
+	 @PostMapping("/{id}/employees")
 	 @Operation(summary = "crear un empleado",
 	           description = "Se proporciona el id de una empresa y se crea un empleado en ella ")
 	 @ApiResponses(value = {
