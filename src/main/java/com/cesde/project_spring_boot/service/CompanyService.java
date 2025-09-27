@@ -103,7 +103,7 @@ public class CompanyService {
 		 }
 		    
 		 Company company = companyOptional.get();
-		 employee.setCompany(company);
+		
 		 
 		    User employee = employeeDTO.toEntity();
              
