@@ -106,7 +106,8 @@ public class CompanyService {
 		 
 		 
 		    User employee = employeeDTO.toEntity();
-		           
+
+		  employee.setCompany(company);
 		    
 		    User savedEmployee = userRepository.save(employee);
 
