@@ -103,7 +103,11 @@ public class CompanyService {
 		 }
 		    
 		 Company company = companyOptional.get();
-		
+		User employee = employeeDTO.toEntity();
+employee.setCompany(company);
+
+User savedEmployee = userRepository.save(employee);
+
 		 
 
 	        //añadir empleado a la lista 
